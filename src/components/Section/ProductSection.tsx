@@ -32,7 +32,7 @@ const ProductsSection: React.FC = () => {
 
   const filteredProducts = selectedCategory === 'All Products'
     ? products
-    : products.filter(product => product?.category === selectedCategory);
+    : [];
 
   return (
     <div className="container mx-auto my-8 p-10">

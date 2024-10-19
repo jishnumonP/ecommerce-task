@@ -7,10 +7,6 @@ import image26 from '../../assets/images/26.png';
 type Product = {
   id: number;
   imageUrl: string;
-  description: string;
-  price: string;
-  sale?: boolean;
-  hot?: boolean;
 };
 
 const products: Product[] = [
@@ -27,7 +23,7 @@ const BestSellersSection: React.FC = () => {
 
   const filteredProducts = selectedCategory === 'All Products'
     ? products
-    : products.filter(product => product?.category === selectedCategory);
+    : [];
 
   return (
     <div className="container mx-auto my-8 px-4">
@@ -51,10 +47,7 @@ const BestSellersSection: React.FC = () => {
           <div key={product.id} className="border p-4 flex flex-col items-center transform transition-transform duration-300 hover:scale-105 relative">
           
             <img src={product.imageUrl} alt={`Product ${product.id}`} className="w-full h-auto object-cover mb-2" />
-            <div className="text-center">
-
-              <p className="text-gray-500">{product.price}</p>
-            </div>
+        
           </div>
         ))}
       </div>

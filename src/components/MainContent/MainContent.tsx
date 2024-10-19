@@ -1,4 +1,4 @@
-import React from 'react';
+
 import mobileui from '../../assets/images/mobileui.png';
 
 const MainContent = () => {
