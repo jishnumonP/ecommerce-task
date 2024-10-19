@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaShoppingCart, FaUser, FaChevronDown, FaBars, FaSearch, FaTimes } from 'react-icons/fa';
 import logo from '../../assets/images/SHOP.CO-1.png';
 
